@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpUI() {
         mAdapter = ImageAdapter(mList, this)
-        layoutmanager = GridLayoutManager(this@MainActivity, 2)
+        layoutmanager = GridLayoutManager(this, 2)
 
         image_recyclerview.apply {
             setHasFixedSize(true)
