@@ -44,7 +44,7 @@ class ImageLoader(private val context: Context) {
         fun with(context: Context): ImageLoader {
 
             require(context != null) {
-                "ImageLoader:with - Context should not be null."
+                "Context should not be null."
             }
 
             return INSTANCE ?: ImageLoader(context).also {
